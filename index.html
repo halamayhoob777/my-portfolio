@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brothers Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-couch"></i>Brothers
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Shop</a></li>
+                <li class="nav-item dropdown">
+                    <a href="#categories" class="nav-link">Categories</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="categories.html"><i class="fas fa-bed"></i> Beds</a></li>
+                        <li><a href="categories.html"><i class="fas fa-couch"></i> Sofa</a></li>
+                        <li><a href="categories.html"><i class="fas fa-chair"></i> Chairs</a></li>
+                        <li><a href="categories.html"><i class="fas fa-lightbulb"></i> Lighting</a></li>
+                        <li><a href="categories.html"><i class="fas fa-table"></i> Tables</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-icons">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="search...">
+                    <i class="fas fa-search" id="searchBtn" title="Search.."></i>
+                    <div id="searchResults" class="search-results-dropdown"></div>
+                </div>
+                <a href="#" title="Profile"><i class="far fa-user"></i></a>
+                <a href="favourites.html" title="Favourites"><i class="far fa-heart"></i></a>
+                <a href="cart.html" title="Shopping cart"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="slide active" style="background-image: url('img/cover-1.jpg');">
+            <div class="hero-content">
+                <h1>Find your comfort <br> in every corner</h1>
+                <div class="hero-btns">
+                    <a href="#" class="btn-shop">shop now</a>
+                    <a href="#" class="btn-signup">sign up</a>
+                </div>
+            </div>
+        </div>
+        <div class="slide " style="background-image: url('img/cover-2.jpg');">
+            <div class="hero-content">
+                <h1>Elevate your home <br> with a modern touch</h1>
+                <div class="hero-btns">
+                    <a href="#" class="btn-shop" style="background-color: rgba(255, 255, 255, 0.4);">shop now</a>
+                    <a href="#" class="btn-signup" style="background-color: rgba(255, 255, 255, 0.4);">sign up</a>
+                </div>
+            </div>
+        </div>
+        <div class="slider-dots">
+            <span class="dot active" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="features">
+            <div class="feature-card">
+                <i class="fas fa-shipping-fast"></i>
+                <div class="text">
+                    <h4>free shipping</h4>
+                    <p>On all orders, nationwide.</p>
+                </div>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-hand-holding-usd"></i>
+                <div class="text">
+                    <h4>Safe payments</h4>
+                    <p>100% secure & encrypted.</p>
+                </div>
+            </div>
+            <div class="feature-card">
+                <i class="fa-solid fa-medal"></i>
+                <div class="text">
+                    <h4>High quality</h4>
+                    <p>Premium materials, built to last.</p>
+                </div>
+            </div>
+            <div class="feature-card">
+                <i class="fa-solid fa-headset"></i>
+                <div class="text">
+                    <h4>Support 24/7</h4>
+                    <p>Ready to help, anytime.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="promos">
+            <div class="promo-banner">
+                <div class="promo-text">
+                    <h3>modern lamps</h3>
+                    <p>for sale <b>199$</b></p>
+                    <button class="btn-shop">shop now</button>
+                </div>
+                <img src="img/5.png" alt="">
+            </div>
+            <div class="promo-banner">
+                <div class="promo-text">
+                    <h3>modern furniture</h3>
+                    <p>for sale <b>399$</b></p>
+                    <button class="btn-shop">shop now</button>
+                </div>
+                <img src="img/ad1.jpg" alt="">
+            </div>
+        </section>
+
+        <h2 class="section-title"><span>Categories</span></h2>
+        <section class="categories">
+            <a href="categories.html">
+                <div class="cat-card">
+                    <img src="img/3.png" alt="">
+                    <div class="cat-info">
+                        <h4>Beds</h4>
+                        <p>23 item</p>
+                    </div>
+                </div>
+            </a>
+            <a href="categories.html">
+                <div class="cat-card">
+                    <img src="img/cat2.jpg" alt="">
+                    <div class="cat-info">
+                        <h4>Sofa</h4>
+                        <p>26 item</p>
+                    </div>
+                </div>
+            </a>
+            <a href="categories.html">
+                <div class="cat-card">
+                    <img src="img/cat-3.jpg" alt="">
+                    <div class="cat-info">
+                        <h4>Chairs</h4>
+                        <p>53 item</p>
+                    </div>
+                </div>
+            </a>
+            <a href="categories.html">
+                <div class="cat-card">
+                    <img src="img/cat-4.jpg" alt="">
+                    <div class="cat-info">
+                        <h4>Lamps</h4>
+                        <p>53 item</p>
+                    </div>
+                </div>
+            </a>
+        </section>
+
+        <section class="about-section">
+            <div class="about-images">
+                <img src="img/ad3.jpg" class="img-main" alt="">
+                <img src="img/4.png" class="img-top" alt="">
+                <img src="img/5.png" class="img-bottom" alt="">
+            </div>
+            <div class="about-content">
+                <h2 class="section-title" style="margin-top: 0;"><span>About us</span></h2>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                    alteration in some form, by injected humour, or randomised words which don't look even slightly
+                    believable.</p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. In aperiam, vitae ullam hic nostrum unde,
+                    quidem, ipsum enim impedit odio voluptates assumenda eum. Officia veritatis quis delectus, minima
+                    aliquam asperiores.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. In aperiam, vitae ullam hic nostrum unde,
+                    quidem, ipsum enim impedit odio voluptates assumenda eum. Officia veritatis quis delectus, minima
+                    aliquam asperiores.
+                </p>
+                <button class="btn-signup">Read more</button>
+            </div>
+        </section>
+    </div>
+
+    <section class="container trending-section">
+        <div class="trending-header">
+            <h2 class="section-title-side"><span>Trending Products</span></h2>
+            <div class="slider-arrows">
+                <button id="prevProduct" class="arrow-btn"><i class="fas fa-chevron-left"></i></button>
+                <button id="nextProduct" class="arrow-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+
+        <div class="product-slider-container">
+            <div class="product-wrapper" id="productWrapper">
+                <a href="product.html" class="product-card">
+                    <div class="product-img-box">
+                        <img src="img/product-1.jpg" alt="Product">
+                    </div>
+                    <div class="product-info">
+                        <h4>Modern Velvet Chair</h4>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="far fa-star"></i>
+                        </div>
+                        <p class="price">$199.00</p>
+                    </div>
+                </a>
+                <a href="product.html" class="product-card">
+                    <div class="product-img-box">
+                        <img src="img/cover-2.jpg" alt="Product">
+                    </div>
+                    <div class="product-info">
+                        <h4>Classic Leather Sofa</h4>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="price">$899.00</p>
+                    </div>
+                </a>
+                <a href="product.html" class="product-card">
+                    <div class="product-img-box"><img src="img/cat2.jpg">
+                    </div>
+                    <div class="product-info">
+                        <h4>Wooden Coffee Table</h4>
+                        <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
+                        <p class="price">$120.00</p>
+                    </div>
+                </a>
+                <a href="product.html" class="product-card">
+                    <div class="product-img-box"><img src="img/product-2.jpg">
+                    </div>
+                    <div class="product-info">
+                        <h4>King Size Bed</h4>
+                        <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
+                        <p class="price">$1,200.00</p>
+                    </div>
+                </a>
+                <a href="product.html" class="product-card">
+                    <div class="product-img-box"><img src="img/cat-3.jpg">
+                    </div>
+                    <div class="product-info">
+                        <h4>Minimalist Chair</h4>
+                        <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
+                        <p class="price">$85.00</p>
+                    </div>
+                </a>
+                <a href="product.html" class="product-card">
+                    <div class="product-img-box"><img src="img/3.png">
+                    </div>
+                    <div class="product-info">
+                        <h4>Stylish Bed</h4>
+                        <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="price">$245.00</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="container ads-section">
+        <div class="ads-grid">
+
+            <div class="ad-card large-ad" style="background-image: url('img/ad4.jpg');">
+                <div class="ad-overlay">
+                    <p class="tagline">Deal Of The Day</p>
+                    <h2>Aqua Globes 2</h2>
+                    <p class="price-tag"><del>$300.00</del> <span>$250.00</span></p>
+
+                    <div class="countdown">
+                        <div class="time-box"><span id="days">00</span>
+                            <p>Days</p>
+                        </div>
+                        <div class="time-box"><span id="hours">00</span>
+                            <p>Hours</p>
+                        </div>
+                        <div class="time-box"><span id="mins">00</span>
+                            <p>Mins</p>
+                        </div>
+                        <div class="time-box"><span id="secs">00</span>
+                            <p>Secs</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ad-card orange-ad" style="background-image: url('img/ad5.jpg');">
+                <div class="ad-overlay centered">
+                    <p>New Arrivals</p>
+                    <h3>HOME OFFICE</h3>
+                    <button class="shop-now-dark">Shop Now</button>
+                </div>
+            </div>
+
+            <div class="ad-card small-ad" style="background-image: url('img/ad6.jpg');">
+                <div class="ad-overlay centered">
+                    <p>New Arrivals</p>
+                    <h3>SOFA STYLE 2020</h3>
+                    <button class="shop-now-dark">Shop Now</button>
+                </div>
+            </div>
+
+            <div class="ad-card small-ad" style="background-image: url('img/ad7.jpg');">
+                <div class="ad-overlay centered">
+                    <p>New Arrivals</p>
+                    <h3>PERFECT FIT FOR YOUR HOME</h3>
+                    <button class="shop-now-dark">Shop Now</button>
+                </div>
+            </div>
+
+            <div class="ad-card small-ad" style="background-image: url('img/ad8.jpg');">
+                <div class="ad-overlay centered">
+                    <p>New Arrivals</p>
+                    <h3>SALE UP TO 30% OFF</h3>
+                    <button class="shop-now-dark">Shop Now</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="container testimonials-section">
+        <h2 class="section-title"><span>What Customers Says</span></h2>
+
+        <div class="testimonial-slider">
+            <div class="testimonial-item active">
+                <div class="testimonial-card">
+                    <i class="fas fa-quote-left quote-icon-bg"></i>
+                    <div class="client-header">
+                        <img src="img/person1.jpg" alt="Hamid Khalid" class="client-img">
+                        <div class="client-meta">
+                            <h4>Hamid Khalid</h4>
+                            <p>Web Designer</p>
+                        </div>
+                    </div>
+                    <div class="client-review">
+                        <p>“ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            laudantium, totam rem aperiam. ”</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-item">
+                <div class="testimonial-card">
+                    <i class="fas fa-quote-left quote-icon-bg"></i>
+                    <div class="client-header">
+                        <img src="img/person2.jpg" alt="Sara Ahmed" class="client-img">
+                        <div class="client-meta">
+                            <h4>Sara Ahmed</h4>
+                            <p>Interior Designer</p>
+                        </div>
+                    </div>
+                    <div class="client-review">
+                        <p>“ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            laudantium, totam rem aperiam. ”</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-item">
+                <div class="testimonial-card">
+                    <i class="fas fa-quote-left quote-icon-bg"></i>
+                    <div class="client-header">
+                        <img src="img/person3.jpg" alt="John Doe" class="client-img">
+                        <div class="client-meta">
+                            <h4>John Doe</h4>
+                            <p>Architect</p>
+                        </div>
+                    </div>
+                    <div class="client-review">
+                        <p>“ Great experience! The modern touch they added to my living room is exactly what I was
+                            looking
+                            for. Top notch quality. ”</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-dots">
+                <span class="t-dot active" onclick="currentTestimonial(0)"></span>
+                <span class="t-dot" onclick="currentTestimonial(1)"></span>
+                <span class="t-dot" onclick="currentTestimonial(2)"></span>
+            </div>
+        </div>
+    </section>
+
+    <section class="container contact-section">
+        <div class="container">
+            <h2 class="section-title"><span>Contact Us</span></h2>
+
+            <div class="contact-grid">
+                <div class="contact-form-wrapper">
+                    <form id="contactForm">
+                        <div class="input-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" placeholder="Email Address" required>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" placeholder="Subject">
+                        </div>
+                        <div class="input-group">
+                            <textarea placeholder="How can we help you?" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+
+                <div class="contact-info-wrapper">
+                    <div class="contact-img-container">
+                        <img src="img/cover-1.jpg" alt="Our Showroom" class="contact-img">
+                    </div>
+
+                    <div class="info-content">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>123 Luxury Street, Design District, NY</p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <p>support@furnishstore.com</p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <p>+1 234 567 890</p>
+                        </div>
+
+                        <div class="opening-hours">
+                            <h4><i class="far fa-clock"></i> Opening Hours</h4>
+                            <ul>
+                                <li><span>Mon - Fri:</span> <span>9:00 AM - 8:00 PM</span></li>
+                                <li><span>Saturday:</span> <span>10:00 AM - 6:00 PM</span></li>
+                                <li><span>Sunday:</span> <span class="closed">Closed</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col brand-col">
+                    <h2 class="footer-logo">Bro<span>thers</span></h2>
+                    <p class="footer-desc">
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo.
+                    </p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Delivery Information</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Account Info</h3>
+                    <ul>
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Shopping Cart</a></li>
+                        <li><a href="#">Wishlist</a></li>
+                        <li><a href="#">Order History</a></li>
+                        <li><a href="#">International Orders</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col newsletter-col">
+                    <h3>Newsletter</h3>
+                    <p>Get updates by subscribe our weekly newsletter</p>
+                    <div class="newsletter-box">
+                        <input type="email" placeholder="Enter your mail address">
+                        <button>Subscribe Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="footer-divider">
+
+            <div class="footer-bottom">
+                <p>Copyright © 2026 <strong>Brothers</strong> Inc. All rights reserved.</p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-stripe"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" title="Go to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brothers Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-couch"></i>Brothers
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Shop</a></li>
+                <li class="nav-item dropdown">
+                    <a href="#categories" class="nav-link">Categories</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="categories.html"><i class="fas fa-bed"></i> Beds</a></li>
+                        <li><a href="categories.html"><i class="fas fa-couch"></i> Sofa</a></li>
+                        <li><a href="categories.html"><i class="fas fa-chair"></i> Chairs</a></li>
+                        <li><a href="categories.html"><i class="fas fa-lightbulb"></i> Lighting</a></li>
+                        <li><a href="categories.html"><i class="fas fa-table"></i> Tables</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-icons">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="search...">
+                    <i class="fas fa-search" id="searchBtn" title="Search.."></i>
+                    <div id="searchResults" class="search-results-dropdown"></div>
+                </div>
+                <a href="#" title="Profile"><i class="far fa-user"></i></a>
+                <a href="favourites.html" title="Favourites"><i class="far fa-heart"></i></a>
+                <a href="cart.html" title="Shopping cart"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </div>
+    </nav>
+    <section class="sub-hero"
+        style="background-image: linear-gradient(rgba(48, 54, 79, 0.6), rgba(48, 54, 79, 0.6)), url('img/sub-hero.jpg');">
+        <div class="container">
+            <div class="sub-hero-content">
+                <h1>Categories</h1>
+                <nav class="breadcrumb">
+                    <a href="index.html">Home</a>
+                    <i class="fas fa-chevron-right"></i>
+                    <span>Categories</span>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="category-page">
+        <div class="container">
+            <div class="main-layout">
+
+                <aside class="sidebar">
+                    <div class="sidebar-box categories-list">
+                        <h3>Categories</h3>
+                        <ul>
+                            <li><a href="#">Beds <span>(23)</span></a></li>
+                            <li><a href="#">Sofa <span>(26)</span></a></li>
+                            <li><a href="#" class="active">Chairs <span>(53)</span></a></li>
+                            <li><a href="#">Lighting <span>(15)</span></a></li>
+                            <li><a href="#">Tables <span>(10)</span></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-ad" style="background-image: url('img/ad9.jpg');">
+                        <div class="ad-content">
+                            <p>New Collection</p>
+                            <h4>Luxury Comfort</h4>
+                            <span class="discount">20% OFF</span>
+                        </div>
+                    </div>
+                </aside>
+
+                <main class="shop-main">
+                    <div class="filter-header">
+                        <div class="filter-group">
+                            <label>Filter by Price:</label>
+                            <select>
+                                <option>Default</option>
+                                <option>Low to High</option>
+                                <option>High to Low</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label>Filter by Type:</label>
+                            <select>
+                                <option>All Types</option>
+                                <option>Wooden</option>
+                                <option>Classic</option>
+                                <option>Modern</option>
+                                <option>Velvet</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="products-grid">
+                        <a href="product.html" class="product-card">
+                            <div class="product-img-box">
+                                <img src="img/cat-4.jpg" alt="Product">
+                            </div>
+                            <div class="product-info">
+                                <h4>Modern Velvet Chair</h4>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="far fa-star"></i>
+                                </div>
+                                <p class="price">$199.00</p>
+                            </div>
+                        </a>
+                        <a href="product.html" class="product-card">
+                            <div class="product-img-box">
+                                <img src="img/cover-2.jpg" alt="Product">
+                            </div>
+                            <div class="product-info">
+                                <h4>Classic Leather Sofa</h4>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                                <p class="price">$899.00</p>
+                            </div>
+                        </a>
+                        <a href="product.html" class="product-card">
+                            <div class="product-img-box"><img src="img/cat2.jpg">
+                            </div>
+                            <div class="product-info">
+                                <h4>Wooden Coffee Table</h4>
+                                <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                                </div>
+                                <p class="price">$120.00</p>
+                            </div>
+                        </a>
+                        <a href="product.html" class="product-card">
+                            <div class="product-img-box"><img src="img/product-2.jpg">
+                            </div>
+                            <div class="product-info">
+                                <h4>King Size Bed</h4>
+                                <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                                </div>
+                                <p class="price">$1,200.00</p>
+                            </div>
+                        </a>
+                        <a href="product.html" class="product-card">
+                            <div class="product-img-box"><img src="img/cat-3.jpg">
+                            </div>
+                            <div class="product-info">
+                                <h4>Minimalist Chair</h4>
+                                <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                                </div>
+                                <p class="price">$85.00</p>
+                            </div>
+                        </a>
+                        <a href="product.html" class="product-card">
+                            <div class="product-img-box"><img src="img/5.png">
+                            </div>
+                            <div class="product-info">
+                                <h4>Stylish Lamp</h4>
+                                <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                                <p class="price">$45.00</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="pagination">
+                        <a href="#" class="prev-page"><i class="fas fa-chevron-left"></i></a>
+                        <a href="#" class="page-num active">1</a>
+                        <a href="#" class="page-num">2</a>
+                        <a href="#" class="page-num">3</a>
+                        <a href="#" class="next-page"><i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col brand-col">
+                    <h2 class="footer-logo">Bro<span>thers</span></h2>
+                    <p class="footer-desc">
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo.
+                    </p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Delivery Information</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Account Info</h3>
+                    <ul>
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Shopping Cart</a></li>
+                        <li><a href="#">Wishlist</a></li>
+                        <li><a href="#">Order History</a></li>
+                        <li><a href="#">International Orders</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col newsletter-col">
+                    <h3>Newsletter</h3>
+                    <p>Get updates by subscribe our weekly newsletter</p>
+                    <div class="newsletter-box">
+                        <input type="email" placeholder="Enter your mail address">
+                        <button>Subscribe Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="footer-divider">
+
+            <div class="footer-bottom">
+                <p>Copyright © 2026 <strong>Brothers</strong> Inc. All rights reserved.</p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-stripe"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" title="Go to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

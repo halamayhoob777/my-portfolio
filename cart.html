@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brothers Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-couch"></i>Brothers
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Shop</a></li>
+                <li class="nav-item dropdown">
+                    <a href="#categories" class="nav-link">Categories</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="categories.html"><i class="fas fa-bed"></i> Beds</a></li>
+                        <li><a href="categories.html"><i class="fas fa-couch"></i> Sofa</a></li>
+                        <li><a href="categories.html"><i class="fas fa-chair"></i> Chairs</a></li>
+                        <li><a href="categories.html"><i class="fas fa-lightbulb"></i> Lighting</a></li>
+                        <li><a href="categories.html"><i class="fas fa-table"></i> Tables</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-icons">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="search...">
+                    <i class="fas fa-search" id="searchBtn" title="Search.."></i>
+                    <div id="searchResults" class="search-results-dropdown"></div>
+                </div>
+                <a href="#" title="Profile"><i class="far fa-user"></i></a>
+                <a href="favourites.html" title="Favourites"><i class="far fa-heart"></i></a>
+                <a href="cart.html" title="Shopping cart"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="sub-hero"
+        style="background-image: linear-gradient(rgba(48, 54, 79, 0.6), rgba(48, 54, 79, 0.6)), url('img/sub-hero.jpg');">
+        <div class="container">
+            <div class="sub-hero-content">
+                <h1>Shopping Cart</h1>
+                <nav class="breadcrumb">
+                    <a href="index.html">Home</a>
+                    <i class="fas fa-chevron-right"></i>
+                    <a href="#">Profile</a>
+                    <i class="fas fa-chevron-right"></i>
+                    <span>Shopping Cart</span>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <section class="cart-page container">
+        <div class="shipping-progress-bar">
+            <div class="shipping-header">
+                <div class="shipping-title">
+                    <i class="fas fa-truck"></i>
+                    <span>Free Shipping</span>
+                </div>
+                <div class="shipping-amount">
+                    <span class="remaining">$500.00</span> away
+                </div>
+            </div>
+            <div class="progress-container">
+                <div class="progress-fill" style="width: 75%;"></div>
+            </div>
+            <p>
+                Add <strong>$500.00</strong> more to get <strong>FREE shipping</strong>!
+            </p>
+        </div>
+
+        <div class="cart-wrapper">
+            <div class="cart-items-section">
+                <div class="cart-table">
+                    <div class="cart-table-header">
+                        <div class="col-product">Product</div>
+                        <div class="col-price">Price</div>
+                        <div class="col-quantity">Quantity</div>
+                        <div class="col-subtotal">Subtotal</div>
+                        <div class="col-remove"></div>
+                    </div>
+
+                    <div class="cart-table-row">
+                        <div class="col-product">
+                            <div class="product-info1">
+                                <img src="img/c2.jpg" alt="Modern Sofa">
+                                <div class="product-details">
+                                    <h3>Modern Chair</h3>
+                                    <span class="product-category">chair</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-price">$180.00</div>
+                        <div class="col-quantity">
+                            <div class="quantity-selector">
+                                <button class="qty-btn minus">−</button>
+                                <input type="number" value="1" min="1" class="qty-input">
+                                <button class="qty-btn plus">+</button>
+                            </div>
+                        </div>
+                        <div class="col-subtotal">$180.00</div>
+                        <div class="col-remove">
+                            <button class="remove-item" title="Remove item">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="cart-table-row">
+                        <div class="col-product">
+                            <div class="product-info1">
+                                <img src="img/bed.jpg" alt="Cozy Armchair">
+                                <div class="product-details">
+                                    <h3>Deluxe Bed</h3>
+                                    <span class="product-category">Bed</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-price">$300.00</div>
+                        <div class="col-quantity">
+                            <div class="quantity-selector">
+                                <button class="qty-btn minus">−</button>
+                                <input type="number" value="1" min="1" class="qty-input">
+                                <button class="qty-btn plus">+</button>
+                            </div>
+                        </div>
+                        <div class="col-subtotal">$300.00</div>
+                        <div class="col-remove">
+                            <button class="remove-item" title="Remove item">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cart-table-row">
+                    <div class="col-product">
+                        <div class="product-info1">
+                            <img src="img/msofa.jpg" alt="Modern Sofa">
+                            <div class="product-details">
+                                <h3>Modern Sofa</h3>
+                                <span class="product-category">Sofa</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-price">$250.00</div>
+                    <div class="col-quantity">
+                        <div class="quantity-selector">
+                            <button class="qty-btn minus">−</button>
+                            <input type="number" value="1" min="1" class="qty-input">
+                            <button class="qty-btn plus">+</button>
+                        </div>
+                    </div>
+                    <div class="col-subtotal">$250.00</div>
+                    <div class="col-remove">
+                        <button class="remove-item" title="Remove item">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="cart-table-row">
+                    <div class="col-product">
+                        <div class="product-info1">
+                            <img src="img/chair.jpg" alt="Modern Sofa">
+                            <div class="product-details">
+                                <h3>Elegant Armchair</h3>
+                                <span class="product-category">Armchair</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-price">$200.00</div>
+                    <div class="col-quantity">
+                        <div class="quantity-selector">
+                            <button class="qty-btn minus">−</button>
+                            <input type="number" value="1" min="1" class="qty-input">
+                            <button class="qty-btn plus">+</button>
+                        </div>
+                    </div>
+                    <div class="col-subtotal">$200.00</div>
+                    <div class="col-remove">
+                        <button class="remove-item" title="Remove item">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="cart-actions">
+                    <div class="coupon-box">
+                        <input type="text" placeholder="Promotion Code">
+                        <button class="btn-shop">APPLY COUPON</button>
+                    </div>
+                    <button class="btn-shop">UPDATE CART</button>
+                </div>
+            </div>
+
+            <div class="cart-summary">
+                <h2>Cart Totals</h2>
+
+                <div class="summary-details">
+                    <div class="summary-line">
+                        <span class="summary-label">Subtotal</span>
+                        <span class="summary-value">$930.00</span>
+                    </div>
+
+                    <div class="summary-line">
+                        <span class="summary-label">Shipping</span>
+                        <span class="summary-value shipping-value">Free Shipping</span>
+                    </div>
+
+                    <div class="summary-divider"></div>
+
+                    <div class="summary-line total">
+                        <span class="summary-label">Total</span>
+                        <span class="summary-value">$930.00</span>
+                    </div>
+                </div>
+
+                <button class="checkout-btn">PROCEED TO CHECKOUT</button>
+
+                <div class="payment-icons">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-amex"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col brand-col">
+                    <h2 class="footer-logo">Bro<span>thers</span></h2>
+                    <p class="footer-desc">
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo.
+                    </p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Delivery Information</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Account Info</h3>
+                    <ul>
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Shopping Cart</a></li>
+                        <li><a href="#">Wishlist</a></li>
+                        <li><a href="#">Order History</a></li>
+                        <li><a href="#">International Orders</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col newsletter-col">
+                    <h3>Newsletter</h3>
+                    <p>Get updates by subscribe our weekly newsletter</p>
+                    <div class="newsletter-box">
+                        <input type="email" placeholder="Enter your mail address">
+                        <button>Subscribe Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="footer-divider">
+
+            <div class="footer-bottom">
+                <p>Copyright © 2026 <strong>Brothers</strong> Inc. All rights reserved.</p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-stripe"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" title="Go to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>
